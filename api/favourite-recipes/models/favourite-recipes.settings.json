@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favourite_recipes",
+  "info": {
+    "name": "favouriteRecipes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "recipe": {
+      "type": "json",
+      "unique": true
+    }
+  }
+}

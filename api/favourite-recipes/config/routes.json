@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/favourite-recipes",
+      "handler": "favourite-recipes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/favourite-recipes/count",
+      "handler": "favourite-recipes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/favourite-recipes/:id",
+      "handler": "favourite-recipes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/favourite-recipes",
+      "handler": "favourite-recipes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/favourite-recipes/:id",
+      "handler": "favourite-recipes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/favourite-recipes/:id",
+      "handler": "favourite-recipes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
