@@ -2,48 +2,48 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/favourite-recipes",
-      "handler": "favourite-recipes.find",
+      "path": "/favouriterecipes",
+      "handler": "favouriterecipes.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/favourite-recipes/count",
-      "handler": "favourite-recipes.count",
+      "path": "/favouriterecipes/count",
+      "handler": "favouriterecipes.count",
       "config": {
         "policies": []
       }
     },
     {
       "method": "GET",
-      "path": "/favourite-recipes/:id",
-      "handler": "favourite-recipes.findOne",
+      "path": "/favouriterecipes/:id",
+      "handler": "favouriterecipes.findOne",
       "config": {
         "policies": []
       }
     },
     {
       "method": "POST",
-      "path": "/favourite-recipes",
-      "handler": "favourite-recipes.create",
+      "path": "/favouriterecipes",
+      "handler": "favouriterecipes.create",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/favourite-recipes/:id",
-      "handler": "favourite-recipes.update",
+      "path": "/favouriterecipes/:id",
+      "handler": "favouriterecipes.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/favourite-recipes/:id",
-      "handler": "favourite-recipes.delete",
+      "path": "/favouriterecipes/:id",
+      "handler": "favouriterecipes.delete",
       "config": {
         "policies": []
       }

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favouriterecipes",
+  "info": {
+    "name": "favouriterecipes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "recipe": {
+      "type": "json",
+      "unique": false
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "favouriterecipes"
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "owner": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
