@@ -26,4 +26,5 @@ module.exports = {
       model: strapi.models.favouriterecipes
     });
   },
+
 };
