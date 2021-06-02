@@ -1,8 +1,29 @@
-'use strict';
+const {
+  sanitizeEntity
+} = require('strapi-utils');
 
-/**
- * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-controllers)
- * to customize this controller
- */
+module.exports = {
+  /**
+   * Create a record.
+   *
+   * @return {Object}
+   */
 
-module.exports = {};
+  async create(ctx) {
+
+    const {
+      user
+    } = ctx.state;
+
+    console.log('User: ', user)
+
+    let entity = await strapi.services.favouriterecipes.create({
+      ...ctx.request.body,
+      users_permissions_user: user.id
+    });
+
+    return sanitizeEntity(entity, {
+      model: strapi.models.favouriterecipes
+    });
+  },
+};

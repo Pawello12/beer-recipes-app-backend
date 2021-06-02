@@ -23,12 +23,12 @@
     },
     "name": {
       "type": "string",
-      "required": true,
+      "required": false,
       "unique": false
     },
     "owner": {
       "type": "string",
-      "required": true
+      "required": false
     }
   }
 }
