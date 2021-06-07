@@ -1,3 +1,12 @@
-# Strapi application
+# Beer Recipe App Backend
 
-A quick description of your strapi application
+Backend for React application used to authenticate users.
+___
+
+## Technologies used
+-Strapi
+
+-SQLite
+
+## Live preview
+https://beer-recipe-app.netlify.app/
